@@ -1,0 +1,185 @@
+.dashboard {
+
+    width: 53vw;
+    min-height: 100vh;
+    height: auto;
+
+    margin: auto;
+    padding: 5rem;
+
+    @media screen and (max-width:1023px) {
+        width: 70vw;        
+    }
+    @media screen and (max-width:767px) {
+        width: 100vw;             
+    }
+
+
+
+    .dashboard__heading {
+        color: #C5C7CA;
+        margin-bottom: 1.4rem;
+    }
+
+    .dashboard__greeting {
+        color: #7F8084;
+        margin-bottom: 4rem;
+    }
+
+    .dashboard__form {       
+        background-color: #27292D;
+
+        border: 2px solid #35373B;
+        border-radius: 8px;
+
+        padding: 2.5rem 2rem;
+        margin-bottom: 1rem;
+
+        .dashboard__form-label {
+            margin-bottom: 1.3rem;
+            color: #C5C7CA;
+        }
+
+        .dashboard__form-input-container {
+            background: #191920;
+
+            width: 100%;
+            height: 8rem;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            border-radius: 8px;
+
+            padding: 1.5rem;
+
+            .dashboard__form-chaticon {
+                width: 4rem;
+                height: 4rem;
+                color:#ffffff;
+
+                display: flex;
+                justify-content: center;
+                align-items: center ;
+
+                border-radius: 50%;
+
+                background-color: #27292D;
+
+                i{
+                    margin-top: -3px;
+                }
+            }
+
+            .dashboard__form-input {
+                margin-left: 1.4rem;
+
+                flex: 1;
+
+                background-color: #191920;
+                color: #7F8084;
+
+                border: none;
+                outline: none;
+
+            }
+
+        }
+
+        .dashboard__form-button {
+            display: block;
+
+            margin-left: auto;
+            margin-right: 0;
+            margin-top: 1.4rem;
+
+
+            background-color: #4A96FF;
+            color: #ffffff;
+
+            width: 10rem;
+            height: 4rem;
+
+            border: none;
+            border-radius: 4px;
+
+        }
+    }
+
+    
+}
+
+// MODAL STYLES
+
+.dashboard__modal-button{
+
+    color: #ffffff;
+
+    width: 3rem;
+    height: 3rem;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #131319;
+
+
+    position: absolute;
+    top: 0;
+    left: calc(100% - 5rem);
+    top:  2rem;
+}
+
+
+
+
+.ReactModalPortal .ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.75) !important;
+    backdrop-filter: blur(2px);
+
+    outline: none;
+
+    height: auto;
+
+    
+    
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+
+
+    
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+ 
+
+    
+}
+
+.ReactModal__content {
+    width: 50rem;
+    outline: none;
+    // padding: 2rem;
+    
+}
+
+.modal{
+    width: 40%;
+    position: relative;
+
+    @media screen and (max-width:1023px) {
+        width: 50%;        
+    }
+    @media screen and (max-width:767px) {
+        width: 70%;             
+    }
+
+}

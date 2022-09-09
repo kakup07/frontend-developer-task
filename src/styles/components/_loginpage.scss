@@ -1,0 +1,21 @@
+.login-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .login-page__form {
+        width: 35vw;
+        height: auto;
+        
+
+        @media screen and (max-width:1023px) {
+            width: 40vw;            
+        }
+        @media screen and (max-width:767px) {
+            width: 50vw;            
+        }
+    }
+}
